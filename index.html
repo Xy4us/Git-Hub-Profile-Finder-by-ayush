@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Hub Finder - Ayush</title>
+    <link
+      rel="icon"
+      href="/assets/General-PNG-_dibujos-Lupa_-Magnificar_-Icono-De-Busqueda-Azul-Linea-Punteada-Línea-PNG-y-Vector-para-69bc4386.ico"
+    />
+    
+    <link rel="stylesheet" href="/assets/index-d8e30774.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="font-bold text-3xl font-custom">Profile Finder</h1>
+        <div id="btn-mode">
+          <p id="mode-text" class="font-custom text-xs font-semibold">LIGHT</p>
+          <div class="icon-container">
+            <img id="mode-icon" src="/assets/sun-icon-d82cf772.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="app">
+          <div class="searchbar-container active">
+            <input
+              type="search"
+              class="font-custom"
+              name="user-input"
+              id="input"
+              placeholder="Enter a GitHub username..."
+              required
+            />
+            <div class="error -mx-2">
+              <p id="no-results">no search results</p>
+            </div>
+            <button class="btn-search" id="submit">Search</button>
+          </div>
+          <div class="profile-container">
+            <div class="profile-content">
+              <div class="profile-header">
+                <img id="avatar" src="#" alt="" />
+                <div class="profile-info-wrapper">
+                  <div class="profile-name">
+                    <h2 id="name"></h2>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      id="user"
+                    ></a>
+                  </div>
+                  <p id="date"></p>
+                </div>
+              </div>
+              <p id="bio"></p>
+              <div class="profile-stats-wrapper">
+                <div class="profile-stat">
+                  <p class="stat-title font-custom">Repos</p>
+                  <p id="repos" class="stat-value"></p>
+                </div>
+                <div class="profile-stat">
+                  <p class="stat-title font-custom">Followers</p>
+                  <p id="followers" class="stat-value"></p>
+                </div>
+                <div class="profile-stat">
+                  <p class="stat-title font-custom">Following</p>
+                  <p id="following" class="stat-value"></p>
+                </div>
+              </div>
+              <div class="profile-bottom-wrapper">
+                <div class="profile-info">
+                  <div class="bottom-icons">
+                    <img src="/assets/location-icon-521c4f3e.svg" alt="" />
+                  </div>
+                  <p id="location"></p>
+                </div>
+                <div class="profile-info">
+                  <div class="bottom-icons">
+                    <img src="/assets/website-icon-a0db6979.svg" alt="" />
+                  </div>
+                  <a href="#" id="page"></a>
+                </div>
+                <div class="profile-info">
+                  <div class="bottom-icons">
+                    <img src="/assets/twitter-icon-4d5d3c39.svg" alt="" />
+                  </div>
+                  <a href="#" id="twitter"></a>
+                </div>
+                <div class="profile-info">
+                  <div class="bottom-icons">
+                    <img src="/assets/company-icon-239d6fee.svg" alt="" />
+                  </div>
+                  <p id="company"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
